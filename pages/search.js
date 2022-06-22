@@ -17,7 +17,7 @@ function Search({ searchResults }) {
 
   return (
     <div>
-      <Header placeholder={`${location} | ${noOfGuests} guests`} />
+      <Header placeholder={`${location} | ${range} | ${noOfGuests} guests`} />
 
       <main className="flex">
         <section className="flex-grow pt-14 px-6">
