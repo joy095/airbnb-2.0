@@ -12,7 +12,6 @@ import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRangePicker } from "react-date-range";
 import { useRouter } from "next/dist/client/router";
 
-<<<<<<< HEAD
 function Header({ placeholder }) {
   const [searchInput, setSearchInput] = useState("");
   const [startDate, setStartDate] = useState(new Date());
@@ -21,16 +20,6 @@ function Header({ placeholder }) {
   const router = useRouter();
 
   const handleSelect = (ranges) => {
-=======
-const Header = ({ placeholder }) => {
-  const [searchInput, setSearchInput] = useState("");
-  const [startDate, setStartDate] = useState(new Date());
-  const [endDate, setEndDate] = useState(new Date());
-  const [noOfGuests, SetNoOfGuests] = useState(1);
-  const router = useRouter();
-
-  const hadleSelect = (ranges) => {
->>>>>>> 1b1584205560f9d6a938bf041ddee7602ad99acb
     setStartDate(ranges.selection.startDate);
     setEndDate(ranges.selection.endDate);
   };
@@ -52,13 +41,8 @@ const Header = ({ placeholder }) => {
   };
 
   const selectionRange = {
-<<<<<<< HEAD
     startDate,
     endDate,
-=======
-    startDate: startDate,
-    endDate: endDate,
->>>>>>> 1b1584205560f9d6a938bf041ddee7602ad99acb
     key: "selection",
   };
 
@@ -104,7 +88,6 @@ const Header = ({ placeholder }) => {
           <DateRangePicker
             ranges={[selectionRange]}
             minDate={new Date()}
-<<<<<<< HEAD
             rangeColors={["#FD5B61"]}
             onChange={handleSelect}
           />
@@ -118,22 +101,6 @@ const Header = ({ placeholder }) => {
               onChange={(e) => setNoOfGuests(e.target.value)}
               min={1}
               type="number"
-=======
-            rangeColors={["#fd5b61"]}
-            onChange={hadleSelect}
-          />
-          <div className="flex items-center border-b mb-4">
-            <h2 className="text-2xl flex-grow font-semibold">
-              Number of Guests
-            </h2>
-
-            <UsersIcon className="h-5" />
-            <input
-              value={noOfGuests}
-              onChange={(e) => SetNoOfGuests(e.target.value)}
-              type="Number"
-              min={1}
->>>>>>> 1b1584205560f9d6a938bf041ddee7602ad99acb
               className="w-12 pl-2 text-lg outline-none text-red-400"
             />
           </div>
@@ -141,11 +108,7 @@ const Header = ({ placeholder }) => {
             <button onClick={resetInput} className="flex-grow text-gray-500">
               Cancel
             </button>
-<<<<<<< HEAD
             <button onClick={search} className="flex-grow text-red-400">
-=======
-            <button onClick={search} className="flex-grow text-red-500">
->>>>>>> 1b1584205560f9d6a938bf041ddee7602ad99acb
               Search
             </button>
           </div>
