@@ -22,7 +22,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 <a href='href="https://airbnb-2-0-tau.vercel.app'>
 <div align='center'>
-<h2>Hey Guy's Click Here or on the image to see the deployed web site</h2>
+<h2>Hey Guy's Click on the image to see the deployed web site</h2>
 </div>
 </a>
 
