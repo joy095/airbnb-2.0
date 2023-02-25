@@ -26,7 +26,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 <br>
 
-<a href='https://hulu-2-0-steel-one.vercel.app'>
+<a href='https://airbnb-2-0-tau.vercel.app'>
 <div align="center">
 <img hight="300" width="700" alt="GIF" align="center" src="./images/airbnb.png">
 </div>
